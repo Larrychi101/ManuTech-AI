@@ -16,7 +16,7 @@ ManuTech AI is a multi-agent orchestration architecture designed to modernize fr
 
 ## 🛠️ Architecture Overview
 
-![ManuTech AI Solution Architecture](assets/architecture-diagram.png)
+![ManuTech AI Solution Architecture](IMG_8381.png)
 
 The platform operates as a context-aware multi-agent fleet grounded via **Azure AI Foundry**, combining internal personnel metrics with official enterprise documentation to deliver real-time, workload-optimized training workflows.
 
