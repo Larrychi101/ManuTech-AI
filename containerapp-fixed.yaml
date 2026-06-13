@@ -1,0 +1,117 @@
+﻿id: /subscriptions/cd2b8ef3-5c1e-47f0-8859-41c3bcffef17/resourceGroups/rg-manutech-ai/providers/Microsoft.App/containerapps/ca-web-ncbg27q3kcuoi
+identity:
+  type: UserAssigned
+  userAssignedIdentities:
+    ? /subscriptions/cd2b8ef3-5c1e-47f0-8859-41c3bcffef17/resourcegroups/rg-manutech-ai/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-web-ncbg27q3kcuoi
+    : clientId: c90a32bf-0c80-44ef-8aea-bf0283001268
+      principalId: de89d14e-ddb4-4bc5-8087-d31a21606aba
+location: East US 2
+name: ca-web-ncbg27q3kcuoi
+properties:
+  configuration:
+    activeRevisionsMode: Single
+    dapr: null
+    identitySettings: []
+    ingress:
+      additionalPortMappings: null
+      allowInsecure: false
+      clientCertificateMode: null
+      corsPolicy: null
+      customDomains: null
+      exposedPort: 0
+      external: true
+      fqdn: ca-web-ncbg27q3kcuoi.victoriousbush-e52145ef.eastus2.azurecontainerapps.io
+      ipSecurityRestrictions: null
+      stickySessions: null
+      targetPort: 80
+      traffic:
+      - latestRevision: true
+        weight: 100
+      transport: Auto
+    maxInactiveRevisions: 100
+    registries:
+    - identity: /subscriptions/cd2b8ef3-5c1e-47f0-8859-41c3bcffef17/resourceGroups/rg-Manutech-AI/providers/Microsoft.ManagedIdentity/userAssignedIdentities/id-web-ncbg27q3kcuoi
+      passwordSecretRef: ''
+      server: crncbg27q3kcuoi.azurecr.io
+      username: ''
+    runtime: null
+    secrets: null
+    service: null
+  customDomainVerificationId: AE297BCD2EC47E3F5CEA23D22FBABE572731DB8E8E79BC1BA5A02814DDB60938
+  delegatedIdentities: []
+  environmentId: /subscriptions/cd2b8ef3-5c1e-47f0-8859-41c3bcffef17/resourceGroups/rg-manutech-ai/providers/Microsoft.App/managedEnvironments/cae-ncbg27q3kcuoi
+  eventStreamEndpoint: https://eastus2.azurecontainerapps.dev/subscriptions/cd2b8ef3-5c1e-47f0-8859-41c3bcffef17/resourceGroups/rg-manutech-ai/containerApps/ca-web-ncbg27q3kcuoi/eventstream
+  latestReadyRevisionName: ca-web-ncbg27q3kcuoi--ardh1qn
+  latestRevisionFqdn: ca-web-ncbg27q3kcuoi--0000004.victoriousbush-e52145ef.eastus2.azurecontainerapps.io
+  latestRevisionName: ca-web-ncbg27q3kcuoi--0000004
+  managedEnvironmentId: /subscriptions/cd2b8ef3-5c1e-47f0-8859-41c3bcffef17/resourceGroups/rg-manutech-ai/providers/Microsoft.App/managedEnvironments/cae-ncbg27q3kcuoi
+  outboundIpAddresses:
+  - 48.204.136.185
+  provisioningState: Succeeded
+  runningStatus: Running
+  template:
+    containers:
+    - env:
+      - name: ASPNETCORE_ENVIRONMENT
+        value: Production
+      - name: ASPNETCORE_URLS
+        value: http://+:80
+      - name: ENTRA_SPA_CLIENT_ID
+        value: b2b58088-74c0-4707-a5b8-e31073a5b6e3
+      - name: ENTRA_TENANT_ID
+        value: b0a2cb4f-69eb-4ded-b29f-7203ab4fb69b
+      - name: AI_AGENT_ENDPOINT
+        value: https://manutech-ai-resource.services.ai.azure.com/api/projects/manutech-ai
+      - name: AI_AGENT_ID
+        value: Manutech-Ai
+      - name: APPLICATIONINSIGHTS_CONNECTION_STRING
+        value: InstrumentationKey=01a89279-0e29-4880-a70c-762f25dcc4a9;IngestionEndpoint=https://eastus2-3.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus2.livediagnostics.monitor.azure.com/;ApplicationId=43df926b-8e24-44af-b018-3e41b7140a04
+      - name: APPLICATIONINSIGHTS_FRONTEND_CONNECTION_STRING
+        value: InstrumentationKey=c0928779-4f4b-4e39-a398-c2468a03fba1;IngestionEndpoint=https://eastus2-3.in.applicationinsights.azure.com/;LiveEndpoint=https://eastus2.livediagnostics.monitor.azure.com/;ApplicationId=0f039959-cb46-46b1-bde6-bc68513c75f0
+      - name: MANAGED_IDENTITY_CLIENT_ID
+        value: c90a32bf-0c80-44ef-8aea-bf0283001268
+      image: mcr.microsoft.com/k8se/quickstart:latest
+      name: ca-web-ncbg27q3kcuoi
+      probes:
+      - failureThreshold: 3
+        httpGet:
+          path: /api/health
+ 80
+        periodSeconds: 30
+        type: Liveness
+      - failureThreshold: 30
+        httpGet:
+          path: /api/health
+ 80
+        initialDelaySeconds: 5
+        periodSeconds: 10
+        type: Startup
+      resources:
+        cpu: 0.5
+        ephemeralStorage: 2Gi
+        memory: 1Gi
+    initContainers: null
+    revisionSuffix: ''
+    scale:
+      cooldownPeriod: 300
+      maxReplicas: 1
+      minReplicas: 1
+      pollingInterval: 30
+      rules: null
+    serviceBinds: null
+    terminationGracePeriodSeconds: null
+    volumes: null
+  workloadProfileName: null
+resourceGroup: rg-manutech-ai
+systemData:
+  createdAt: '2026-06-13T00:19:32.652883'
+  createdBy: Lawrence@sologid.com
+  createdByType: User
+  lastModifiedAt: '2026-06-13T07:31:34.4807125'
+  lastModifiedBy: Lawrence@sologid.com
+  lastModifiedByType: User
+tags:
+  app-name: ai-foundry-agent
+  azd-env-name: manutech-ai
+  azd-service-name: web
+type: Microsoft.App/containerApps
