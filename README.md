@@ -1,3 +1,4 @@
+```markdown
 # ManuTech AI: Autonomous Multi-Agent Enterprise Learning Platform
 
 [![Platform](https://img.shields.io/badge/Platform-Azure_AI_Foundry-0078D4?logo=microsoftazure)](https://ai.azure.com)
@@ -15,6 +16,8 @@ ManuTech AI is a multi-agent orchestration architecture designed to modernize fr
 ---
 
 ## 🛠️ Architecture Overview
+
+![ManuTech AI Solution Architecture](assets/architecture-diagram.png)
 
 The platform operates as a context-aware multi-agent fleet grounded via **Azure AI Foundry**, combining internal personnel metrics with official enterprise documentation to deliver real-time, workload-optimized training workflows.
 
