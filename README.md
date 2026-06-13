@@ -1,4 +1,3 @@
-```markdown
 # ManuTech AI: Autonomous Multi-Agent Enterprise Learning Platform
 
 [![Platform](https://img.shields.io/badge/Platform-Azure_AI_Foundry-0078D4?logo=microsoftazure)](https://ai.azure.com)
@@ -69,6 +68,3 @@ Once deployed via azd, ensure your agent and knowledge base properties in the Az
  * **Answer Instructions (learning-path-curator):** Enforce Answer synthesis mode. Command the agent to always include direct URLs to official Microsoft Learn documentation and strictly forbid hallucinating course syllabus maps.
 ## 🛡️ License
 Distributed under the Apache License 2.0. See LICENSE for more information. Built for the **Microsoft Agents League Hackathon (June 2026)**.
-```
-
-```
