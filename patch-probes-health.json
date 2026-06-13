@@ -1,1 +1,0 @@
-{"properties":{"template":{"containers":[{"name":"ca-web-ncbg27q3kcuoi","ports":[{"port":80}],"probes":[{"type":"Liveness","failureThreshold":3,"periodSeconds":30,"httpGet":{"path":"/health","port":80}},{"type":"Startup","failureThreshold":30,"initialDelaySeconds":5,"periodSeconds":10,"httpGet":{"path":"/health","port":80}}]}]}}}
