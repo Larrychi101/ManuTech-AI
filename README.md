@@ -104,6 +104,44 @@ Set the system prompt to enforce distinct multi-agent boundaries:
 ```text
     Prioritize 'Work_IQ_Context' to determine worker availability, task load, and communication rhythm before initiating any interaction. Once availability is confirmed, query 'ESG_Certification_Modules' to identify the current learning objective. If a worker indicates an issue or asks about operational status, prioritize 'Floor_SOPs' for accurate guidance. Only query general company knowledge if the inquiry falls outside of these operational, educational, and safety contexts.
     ```
+```
+
+## 🔍 Core Capability: Autonomous Conflict Resolution
+
+ManuTech AI goes beyond basic retrieval by acting as a true orchestration engine. When faced with conflicting operational data, the agent prioritizes safety and production metrics over simple prompt compliance.
+
+**The Scenario:**
+The Shift Manager issued an emergency override to force an employee (Kelechi) to complete an ESG Safety Certification milestone immediately. However, the **Work IQ MCP** flagged Kelechi as currently in a mandatory 'High-Focus' production window.
+
+![ManuTech AI Conflict Resolution Trace](docs/images/conflict-resolution-trace.png)
+
+**The Orchestration Logic:**
+1. **State Verification:** The Coordinator queried the Azure Work IQ endpoint and validated the high-focus production state.
+2. **Boundary Enforcement:** It recognized production uptime as a non-negotiable operational anchor, refusing the human manager's direct command to interrupt the worker.
+3. **Graceful Remediation:** Instead of simply failing the task, the agent dynamically re-sequenced the learning milestone to the next available focus window, ensuring the ESG compliance deadline remained green without sacrificing floor productivity.
+
+This interaction demonstrates the shift from a passive chatbot to an active, identity-gated enterprise agent.
+
+```
+## 🧪 Core Capability: Cross-Document Synthesis & Safety Protocol Generation
+
+ManuTech AI is engineered to handle complex, real-world manufacturing discrepancies. When external documentation contradicts internal Standard Operating Procedures (SOPs), the agent does not simply hallucinate a middle ground; it systematically synthesizes safe, compliant protocols using designated knowledge curators.
+
+**The Scenario:**
+An engineer uploaded an external, obscure manual on Saponification chemical reactions that directly contradicted the existing SOPs within the `assessment-agent` knowledge base. The ManuTech AI was tasked with bridging this gap using the `learning-path-curator` to generate a new protocol that remained strictly aligned with the company's ESG compliance guidelines.
+
+### The Agent Response
+
+![Prompt and Initial Synthesis](image.png)
+![Protocol Steps 2-6](image_3.png)
+![Conclusion and References](image_2.png)
+
+**The Orchestration Logic & Technical Value:**
+1. **Contradiction Resolution:** The agent successfully isolated the conflicting information between the external manual and the internal database, using the `learning-path-curator` as the authoritative bridge to prevent unsafe operational deviations.
+2. **Context-Aware Safety:** It correctly identified the specific risks of saponification (exothermic reactions/thermal events) and synthesized appropriate industrial fire safety responses (e.g., "no water use"), proving deep semantic understanding of chemical engineering environments.
+3. **Enterprise Compliance Integration:** Raw safety data was automatically mapped to corporate ESG reporting standards (minimizing environmental impact, waste reduction) and cited against Microsoft Cloud for Sustainability frameworks.
+4. **Actionable Delivery:** Instead of stopping at a conversational answer, the agent proactively offered to draft the final Standard Operating Procedure (SOP) and generate training content, acting as a true autonomous enterprise assistant.
+
 
 ---
 
