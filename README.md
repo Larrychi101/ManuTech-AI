@@ -122,7 +122,7 @@ The Shift Manager issued an emergency override to force an employee (Kelechi) to
 
 This interaction demonstrates the shift from a passive chatbot to an active, identity-gated enterprise agent.
 
-```
+
 ## 🧪 Core Capability: Cross-Document Synthesis & Safety Protocol Generation
 
 ManuTech AI is engineered to handle complex, real-world manufacturing discrepancies. When external documentation contradicts internal Standard Operating Procedures (SOPs), the agent does not simply hallucinate a middle ground; it systematically synthesizes safe, compliant protocols using designated knowledge curators.
