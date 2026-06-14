@@ -47,7 +47,7 @@ The platform operates as a context-aware multi-agent fleet grounded via **Azure 
 
 The system runs a closed-loop multi-agent workflow to move personnel from gap identification to full certification compliance:
 
-```mermaid
+```
 graph TD
     A[Employee Requests Study Content] --> B[Curator Generates Concise Checklist]
     B --> C[Study Plan Generator Maps Adaptive Schedule via Fabric IQ]
@@ -91,13 +91,6 @@ azd auth login
 azd up
 
 ```
-
-You don’t *have* to, but I highly recommend adding it.
-In a hackathon or technical evaluation, judges are reviewing dozens of projects and are incredibly pressed for time. Often, they will scan a README.md before they ever attempt to clone the repository or run a single line of code. By including the expected terminal output, you achieve two things:
- 1. **Instant Gratification:** You show them exactly how the agent thinks, authenticates, and connects to the MCP servers without making them do the work.
- 2. **Setting Expectations:** If they *do* run test_agent.py and get an error (maybe due to their own local Python environment issues), they at least know what the system was *supposed* to output.
-### How to format it in your README
-You should place it under a "Quick Start" or "Local Testing" section. Here is the exact Markdown snippet you can paste in:
 
 **## 🚀 Running the Local Test Suite**
 
