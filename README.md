@@ -132,7 +132,7 @@ An engineer uploaded an external, obscure manual on Saponification chemical reac
 
 ### The Agent Response
 
-![Prompt and Initial Synthesis]Screenshots/IMG_8398.jpeg
+![Prompt and Initial Synthesis]Screenshots/IMG_8398.jpeg Screenshots/IMG_8397.jpeg
 ![Protocol Steps 2-6]Screenshots/IMG_8399.jpeg
 ![Conclusion and References]Screenshots/IMG_8400.jpeg
 
