@@ -113,7 +113,7 @@ ManuTech AI goes beyond basic retrieval by acting as a true orchestration engine
 **The Scenario:**
 The Shift Manager issued an emergency override to force an employee (Kelechi) to complete an ESG Safety Certification milestone immediately. However, the **Work IQ MCP** flagged Kelechi as currently in a mandatory 'High-Focus' production window.
 
-![ManuTech AI Conflict Resolution Trace]
+**ManuTech AI Conflict Resolution Trace**
 
 **The Orchestration Logic:**
 1. **State Verification:** The Coordinator queried the Azure Work IQ endpoint and validated the high-focus production state [Screenshots/IMG_8395.jpeg](https://github.com/Larrychi101/ManuTech-AI/blob/fea0ffc3c3b82402d2ec62cb579335e6af3e2201/Screenshots/IMG_8395.jpeg)
@@ -132,9 +132,9 @@ An engineer uploaded an external, obscure manual on Saponification chemical reac
 
 ### The Agent Response
 
-[Prompt and Initial Synthesis] [Screenshots/IMG_8398.jpeg](https://github.com/Larrychi101/ManuTech-AI/blob/main/Screenshots/IMG_8398.jpeg)
-[Protocol Steps 2-6] [Screenshots/IMG_8399.jpeg](https://github.com/Larrychi101/ManuTech-AI/blob/main/Screenshots/IMG_8399.jpeg)
-[Conclusion and References] [Screenshots/IMG_8400.jpeg](https://github.com/Larrychi101/ManuTech-AI/blob/main/Screenshots/IMG_8398.jpeg)
+*Prompt and Initial Synthesis*[Screenshots/IMG_8398.jpeg](https://github.com/Larrychi101/ManuTech-AI/blob/main/Screenshots/IMG_8398.jpeg)
+*Protocol Steps 2-6*[Screenshots/IMG_8399.jpeg](https://github.com/Larrychi101/ManuTech-AI/blob/main/Screenshots/IMG_8399.jpeg)
+*Conclusion and References*[Screenshots/IMG_8400.jpeg](https://github.com/Larrychi101/ManuTech-AI/blob/main/Screenshots/IMG_8398.jpeg)
 
 **The Orchestration Logic & Technical Value:**
 1. **Contradiction Resolution:** The agent successfully isolated the conflicting information between the external manual and the internal database, using the `learning-path-curator` as the authoritative bridge to prevent unsafe operational deviations.
