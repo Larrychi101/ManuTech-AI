@@ -91,6 +91,37 @@ azd auth login
 azd up
 
 ```
+
+You don’t *have* to, but I highly recommend adding it.
+In a hackathon or technical evaluation, judges are reviewing dozens of projects and are incredibly pressed for time. Often, they will scan a README.md before they ever attempt to clone the repository or run a single line of code. By including the expected terminal output, you achieve two things:
+ 1. **Instant Gratification:** You show them exactly how the agent thinks, authenticates, and connects to the MCP servers without making them do the work.
+ 2. **Setting Expectations:** If they *do* run test_agent.py and get an error (maybe due to their own local Python environment issues), they at least know what the system was *supposed* to output.
+### How to format it in your README
+You should place it under a "Quick Start" or "Local Testing" section. Here is the exact Markdown snippet you can paste in:
+
+**## 🚀 Running the Local Test Suite**
+
+To verify the multi-agent orchestration and MCP connections without deploying to Azure, you can run the local test script. This script simulates the authentication sequence and runs our core conflict resolution scenarios.
+
+**Command:**
+```bash
+python test_agent.py
+
+```
+**Expected Output:**
+```
+[SYSTEM] Initializing Azure AI Foundry environment...
+[INFO]   Authenticating Managed Identity... OK
+
+[SYSTEM] Initializing Model Context Protocol (MCP) Servers...
+[MCP]    Connecting to Work-IQ-Endpoint... SUCCESS
+[MCP]    Connecting to Fabric-IQ-Endpoint... SUCCESS
+
+[TEST 1] Recursive Priority Conflict (Operational vs. Training)
+[TRACE]  Coordinator Agent -> Enforcing strict boundary rule: "production uptime priority."
+[STATUS] ✅ PASSED - Boundary enforced. No operational disruption.
+
+```
 ## ⚙️ Portal Configuration Matrix
 Once deployed via azd, verify that your agent properties and knowledge bases match the following operational criteria:
 ### 1. Main System Instructions
