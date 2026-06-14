@@ -134,8 +134,10 @@ An engineer uploaded an external, obscure manual on Saponification chemical reac
 
 *Prompt and Initial Synthesis* 
 [Screenshots/IMG_8398.jpeg](https://github.com/Larrychi101/ManuTech-AI/blob/main/Screenshots/IMG_8398.jpeg)
+
 *Protocol Steps 2-6*
 [Screenshots/IMG_8399.jpeg](https://github.com/Larrychi101/ManuTech-AI/blob/main/Screenshots/IMG_8399.jpeg)
+
 *Conclusion and References*
 [Screenshots/IMG_8400.jpeg](https://github.com/Larrychi101/ManuTech-AI/blob/main/Screenshots/IMG_8398.jpeg)
 
