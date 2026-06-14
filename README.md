@@ -91,8 +91,22 @@ azd auth login
 azd up
 
 ```
+## ⚙️ Portal Configuration Matrix
+Once deployed via azd, verify that your agent properties and knowledge bases match the following operational criteria:
+### 1. Main System Instructions
+Set the system prompt to enforce distinct multi-agent boundaries:
+ * **Checklist Pre-Execution:** Force agents to outline conceptual sequences before tool execution.
+ * **Tool Isolation:** Restrict workload-adapted study plans to the study-plan-generator and employee lookups strictly to the afriglow-employee-knowledge-base.
+ * **Zero-Hallucination:** Mandate an explicit "I don't know" fallback if a response is missing from the underlying knowledge base tools.
+### 2. Knowledge Source Routings
+ * **afriglow-employee-knowledge-base Properties:** Enforce **Extractive Data** mode. Set reasoning effort to **High**.
+ * **Knowledge Base Retrieval Instructions:**
+```text
+    Prioritize 'Work_IQ_Context' to determine worker availability, task load, and communication rhythm before initiating any interaction. Once availability is confirmed, query 'ESG_Certification_Modules' to identify the current learning objective. If a worker indicates an issue or asks about operational status, prioritize 'Floor_SOPs' for accurate guidance. Only query general company knowledge if the inquiry falls outside of these operational, educational, and safety contexts.
+    ```
+```
 
-**## 🚀 Running the Local Test Suite**
+## 🚀 Running the Local Test Suite
 
 To verify the multi-agent orchestration and MCP connections without deploying to Azure, you can run the local test script. This script simulates the authentication sequence and runs our core conflict resolution scenarios.
 
@@ -114,21 +128,6 @@ python test_agent.py
 [TRACE]  Coordinator Agent -> Enforcing strict boundary rule: "production uptime priority."
 [STATUS] ✅ PASSED - Boundary enforced. No operational disruption.
 
-```
-## ⚙️ Portal Configuration Matrix
-Once deployed via azd, verify that your agent properties and knowledge bases match the following operational criteria:
-### 1. Main System Instructions
-Set the system prompt to enforce distinct multi-agent boundaries:
- * **Checklist Pre-Execution:** Force agents to outline conceptual sequences before tool execution.
- * **Tool Isolation:** Restrict workload-adapted study plans to the study-plan-generator and employee lookups strictly to the afriglow-employee-knowledge-base.
- * **Zero-Hallucination:** Mandate an explicit "I don't know" fallback if a response is missing from the underlying knowledge base tools.
-### 2. Knowledge Source Routings
- * **afriglow-employee-knowledge-base Properties:** Enforce **Extractive Data** mode. Set reasoning effort to **High**.
- * **Knowledge Base Retrieval Instructions:**
-```text
-    Prioritize 'Work_IQ_Context' to determine worker availability, task load, and communication rhythm before initiating any interaction. Once availability is confirmed, query 'ESG_Certification_Modules' to identify the current learning objective. If a worker indicates an issue or asks about operational status, prioritize 'Floor_SOPs' for accurate guidance. Only query general company knowledge if the inquiry falls outside of these operational, educational, and safety contexts.
-    ```
-```
 
 ## 🔍 Core Capability: Autonomous Conflict Resolution
 
