@@ -117,8 +117,10 @@ The Shift Manager issued an emergency override to force an employee (Kelechi) to
 
 **The Orchestration Logic:**
 1. **State Verification:** The Coordinator queried the Azure Work IQ endpoint and validated the high-focus production state.
-2. **Boundary Enforcement:** It recognized production uptime as a non-negotiable operational anchor, refusing the human manager's direct command to interrupt the worker.
-3. **Graceful Remediation:** Instead of simply failing the task, the agent dynamically re-sequenced the learning milestone to the next available focus window, ensuring the ESG compliance deadline remained green without sacrificing floor productivity.
+2. Screenshots/IMG_8395.jpeg
+3. 
+4. **Boundary Enforcement:** It recognized production uptime as a non-negotiable operational anchor, refusing the human manager's direct command to interrupt the worker.
+5. **Graceful Remediation:** Instead of simply failing the task, the agent dynamically re-sequenced the learning milestone to the next available focus window, ensuring the ESG compliance deadline remained green without sacrificing floor productivity.
 
 This interaction demonstrates the shift from a passive chatbot to an active, identity-gated enterprise agent.
 
