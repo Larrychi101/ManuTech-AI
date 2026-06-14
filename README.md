@@ -47,7 +47,7 @@ The platform operates as a context-aware multi-agent fleet grounded via **Azure 
 
 The system runs a closed-loop multi-agent workflow to move personnel from gap identification to full certification compliance:
 
-```
+```mermaid
 graph TD
     A[Employee Requests Study Content] --> B[Curator Generates Concise Checklist]
     B --> C[Study Plan Generator Maps Adaptive Schedule via Fabric IQ]
