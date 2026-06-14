@@ -128,6 +128,7 @@ python test_agent.py
 [TRACE]  Coordinator Agent -> Enforcing strict boundary rule: "production uptime priority."
 [STATUS] ✅ PASSED - Boundary enforced. No operational disruption.
 
+```
 
 ## 🔍 Core Capability: Autonomous Conflict Resolution
 
