@@ -171,8 +171,37 @@ An engineer uploaded an external, obscure manual on Saponification chemical reac
 3. **Enterprise Compliance Integration:** Raw safety data was automatically mapped to corporate ESG reporting standards (minimizing environmental impact, waste reduction) and cited against Microsoft Cloud for Sustainability frameworks.
 4. **Actionable Delivery:** Instead of stopping at a conversational answer, the agent proactively offered to draft the final Standard Operating Procedure (SOP) and generate training content, acting as a true autonomous enterprise assistant.
 
+## Azure Foundry Continuous Evaluation Results
 
----
+### results.jsonl
+
+This file contains evaluation run output data in JSONL (JSON Lines) format. Each line represents a single evaluation output item from a continuous evaluation run.
+
+**File Structure:**
+- **Format**: JSONL (one JSON object per line)
+- **Content**: Evaluation run metadata and results
+- **Key Fields**:
+  - `object`: Type of object (e.g., `eval.run.output_item`)
+  - `id`: Unique identifier for the evaluation output item
+  - `run_id`: Reference to the continuous evaluation run
+  - `eval_id`: Reference to the evaluation configuration
+  - `created_at`: Timestamp of when the result was created
+  - `datasource_item_id`: Reference to the source data item being evaluated
+
+**Purpose:**
+This file stores the output results from automated evaluations, allowing you to track evaluation metrics, test outcomes, and performance data over time. Each entry represents a single evaluation result from the continuous evaluation pipeline.
+
+**Usage:**
+To parse this file, read it line-by-line and decode each line as a separate JSON object:
+
+```python
+import json
+
+with open('Screenshots/results.jsonl', 'r') as f:
+    for line in f:
+        result = json.loads(line)
+        # Process each result object
+```
 
 ## 🛡️ License
 Distributed under the Apache License 2.0. See `LICENSE` for more information. Built for the **Microsoft Agents League Hackathon (June 2026)**.
