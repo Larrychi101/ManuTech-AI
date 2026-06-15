@@ -173,7 +173,7 @@ An engineer uploaded an external, obscure manual on Saponification chemical reac
 
 ## Azure Foundry Continuous Evaluation Results
 
-### results.jsonl Screenshots/results.jsonl
+### results.jsonl [Screenshots/results.jsonl] 
 
 This file contains evaluation run output data in JSONL (JSON Lines) format. Each line represents a single evaluation output item from a continuous evaluation run.
 
