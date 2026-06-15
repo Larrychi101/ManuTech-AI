@@ -1,4 +1,4 @@
-# ManuTech AI: Autonomous Multi-Agent Enterprise Learning Platform for Factory Workers
+# A Multi-Agent Enterprise Learning Platform for Factory Workers
 
 [![Platform](https://img.shields.io/badge/Platform-Azure_AI_Foundry-0078D4?logo=microsoftazure)](https://ai.azure.com)
 [![Protocol](https://img.shields.io/badge/Protocol-MCP__Server-orange?logo=modelcontextprotocol)](https://modelcontextprotocol.io)
