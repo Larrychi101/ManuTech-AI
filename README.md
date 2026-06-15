@@ -163,7 +163,7 @@ An engineer uploaded an external, obscure manual on Saponification chemical reac
 [Screenshots/IMG_8399.jpeg](https://github.com/Larrychi101/ManuTech-AI/blob/main/Screenshots/IMG_8399.jpeg)
 
 *Conclusion and References*
-[Screenshots/IMG_8400.jpeg]([https://github.com/Larrychi101/ManuTech-AI/blob/main/Screenshots/IMG_8398.jpeg](https://github.com/Larrychi101/ManuTech-AI/blob/37db0928bcc7b55c217d0153a78ed909d2688d9e/Screenshots/IMG_8400.jpeg)
+[Screenshots/IMG_8400.jpeg](https://github.com/Larrychi101/ManuTech-AI/blob/37db0928bcc7b55c217d0153a78ed909d2688d9e/Screenshots/IMG_8400.jpeg)
 
 **The Orchestration Logic & Technical Value:**
 1. **Contradiction Resolution:** The agent successfully isolated the conflicting information between the external manual and the internal database, using the `learning-path-curator` as the authoritative bridge to prevent unsafe operational deviations.
